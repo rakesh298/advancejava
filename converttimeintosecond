@@ -1,0 +1,22 @@
+package lab0;
+
+import java.util.Scanner;
+
+public class Ques_1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int days, hours, minutes, seconds, sec;
+		System.out.println("Enter details for a mail took to reach the destination:");
+		System.out.print("Enter number of days:");
+		days = sc.nextInt();
+		System.out.print("Enter number of hours:");
+		hours = sc.nextInt();
+		System.out.print("Enter number of minutes:");
+		minutes = sc.nextInt();
+		System.out.print("Enter number of seconds:");
+		seconds = sc.nextInt();
+		sc.close();
+	    sec=(days*24*60*60)+(hours*60*60)+(minutes*60)+(seconds);
+		System.out.println("Number of seconds mail take to reach destination = " + sec);
+	}
+}
